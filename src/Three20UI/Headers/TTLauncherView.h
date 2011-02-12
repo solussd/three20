@@ -1,5 +1,5 @@
 //
-// Copyright 2009-2011 Facebook
+// Copyright 2009-2010 Facebook
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -51,6 +51,8 @@
   BOOL _springing;
 
   id<TTLauncherViewDelegate> _delegate;
+    
+  UIView *bannerView; 
 }
 
 @property (nonatomic, assign) id<TTLauncherViewDelegate> delegate;
@@ -61,13 +63,13 @@
 
 @property (nonatomic, readonly) NSInteger rowCount;
 
-@property (nonatomic, readonly) TTPageControl* pager;
-
 @property (nonatomic) NSInteger currentPageIndex;
 
 @property (nonatomic, copy) NSString* prompt;
 
 @property (nonatomic, readonly) BOOL editing;
+
+@property (nonatomic, retain) UIView *bannerView;
 
 - (void)addItem:(TTLauncherItem*)item animated:(BOOL)animated;
 
