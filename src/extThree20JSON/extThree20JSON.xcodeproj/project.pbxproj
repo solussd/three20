@@ -1222,6 +1222,7 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = "$(BASE_PRODUCT_NAME)+SBJSON-Xcode3.2.5";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -1242,6 +1243,7 @@
 				PRODUCT_NAME = "$(BASE_PRODUCT_NAME)+SBJSON-Xcode3.2.5";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Internal;
 		};
@@ -1256,6 +1258,7 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = "$(BASE_PRODUCT_NAME)+SBJSON-Xcode3.2.5";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -1274,6 +1277,7 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = "$(BASE_PRODUCT_NAME)+YAJL-Xcode3.2.5";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -1294,6 +1298,7 @@
 				PRODUCT_NAME = "$(BASE_PRODUCT_NAME)+YAJL-Xcode3.2.5";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Internal;
 		};
@@ -1308,6 +1313,7 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = "$(BASE_PRODUCT_NAME)+YAJL-Xcode3.2.5";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -1370,8 +1376,10 @@
 					DEBUG,
 					EXTJSON_YAJL,
 				);
+				INSTALL_PATH = "";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -1387,9 +1395,11 @@
 					EXTJSON_YAJL,
 					DEBUG,
 				);
+				INSTALL_PATH = "";
 				PREBINDING = NO;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Internal;
 		};
@@ -1401,8 +1411,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = EXTJSON_YAJL;
+				INSTALL_PATH = "";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -1417,6 +1429,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Internal;
 		};
@@ -1432,9 +1445,11 @@
 					EXTJSON_SBJSON,
 					DEBUG,
 				);
+				INSTALL_PATH = "";
 				PREBINDING = NO;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Internal;
 		};
@@ -1466,8 +1481,10 @@
 					EXTJSON_SBJSON,
 					DEBUG,
 				);
+				INSTALL_PATH = "";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -1479,8 +1496,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = EXTJSON_SBJSON;
+				INSTALL_PATH = "";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -1495,6 +1514,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -1509,6 +1529,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};

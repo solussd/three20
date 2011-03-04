@@ -1205,6 +1205,7 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = "$(BASE_PRODUCT_NAME)-Xcode3.2.5";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -1220,6 +1221,7 @@
 				PRODUCT_NAME = "$(BASE_PRODUCT_NAME)-Xcode3.2.5";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Internal;
 		};
@@ -1233,6 +1235,7 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = "$(BASE_PRODUCT_NAME)-Xcode3.2.5";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -1297,6 +1300,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Internal;
 		};
@@ -1309,10 +1313,12 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/../common/Xcode324iOS41Fix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				INSTALL_PATH = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = "$(BASE_PRODUCT_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Internal;
 		};
@@ -1343,9 +1349,11 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				INSTALL_PATH = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = "$(BASE_PRODUCT_NAME)";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -1356,9 +1364,11 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				INSTALL_PATH = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = "$(BASE_PRODUCT_NAME)";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -1373,6 +1383,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -1386,6 +1397,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};

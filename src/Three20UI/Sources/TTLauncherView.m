@@ -43,7 +43,7 @@
 #import "Three20Core/TTGlobalCoreRects.h"
 
 static const CGFloat kMargin = 0;
-static const CGFloat kMarginTop = 90;
+static const CGFloat kMarginTop = 45;
 static const CGFloat kPadding = 0;
 static const CGFloat kPromptMargin = 40;
 static const CGFloat kPagerHeight = 20;
