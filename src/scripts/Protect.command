@@ -20,13 +20,13 @@
 # Ignore whitespace characters in paths
 IFS=$'\n'
 
-if [ "${DEPLOYMENT_LOCATION}" == "YES" ]; then
-    PREFIX=${BUILT_PRODUCTS_DIR}/..
+# In Xcode 4 Archive builds, there is one extra folder placed between the configuration build
+# dir and the public headers path titled "ArchiveIntermediates".
+if [[ "$DEPLOYMENT_LOCATION" == "YES" && "$XCODE_VERSION_MAJOR" -ge "0400" ]]; then
+  cd ${CONFIGURATION_BUILD_DIR}/..${PUBLIC_HEADERS_FOLDER_PATH}
 else
-    PREFIX=${BUILT_PRODUCTS_DIR}
+  cd ${CONFIGURATION_BUILD_DIR}${PUBLIC_HEADERS_FOLDER_PATH}
 fi
-
-cd ${PREFIX}${PUBLIC_HEADERS_FOLDER_PATH}
 
 chmod a-w *.h 2>> /dev/null
 chmod a-w private/*.h 2>> /dev/null
