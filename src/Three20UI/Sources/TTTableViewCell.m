@@ -45,7 +45,6 @@ const NSInteger kTableMessageTextLineCount = 2;
 #pragma mark -
 #pragma mark UITableViewCell
 
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)prepareForReuse {
   self.object = nil;
