@@ -32,6 +32,7 @@
 #import "Three20UI/TTTableTextItem.h"
 #import "Three20UI/TTTableActivityItem.h"
 #import "Three20UI/TTTableControlItem.h"
+#import "Three20UI/TTTableCheckmarkItem.h"
 
 // - Table Cells
 #import "Three20UI/TTTableMoreButtonCell.h"
@@ -47,6 +48,7 @@
 #import "Three20UI/TTTableTextItemCell.h"
 #import "Three20UI/TTStyledTextTableCell.h"
 #import "Three20UI/TTTableFlushViewCell.h"
+#import "Three20UI/TTTableCheckmarkItemCell.h"
 
 // Style
 #import "Three20Style/TTStyledText.h"
@@ -279,6 +281,8 @@
     } else if ([object isKindOfClass:[TTTableControlItem class]]) {
       return [TTTableControlCell class];
 
+    } else if ([object isKindOfClass:[TTTableCheckmarkItem class]]) {
+        return [TTTableCheckmarkItemCell class];
     } else {
       return [TTTableTextItemCell class];
     }
