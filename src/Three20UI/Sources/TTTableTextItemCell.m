@@ -121,7 +121,7 @@ static const UILineBreakMode kLineBreakMode = UILineBreakModeWordWrap;
 - (void)setObject:(id)object {
   if (_item != object) {
     [super setObject:object];
-
+    
     TTTableTextItem* item = object;
     self.textLabel.text = item.text;
 

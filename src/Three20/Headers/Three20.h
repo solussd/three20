@@ -37,3 +37,6 @@
 
 // UI
 #import "Three20UI/Three20UI.h"
+
+//I want it all
+#import "Three20+Additions.h"

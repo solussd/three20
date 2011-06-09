@@ -89,7 +89,7 @@
 #import "Three20UI/TTSectionedDataSource.h"
 #import "Three20UI/TTTableHeaderView.h"
 #import "Three20UI/TTTableFooterInfiniteScrollView.h"
-#import "THree20UI/TTTableHeaderDragRefreshView.h"
+#import "Three20UI/TTTableHeaderDragRefreshView.h"
 #import "Three20UI/TTTableViewCell.h"
 
 // Table Items
@@ -112,6 +112,7 @@
 #import "Three20UI/TTTableActivityItem.h"
 #import "Three20UI/TTTableStyledTextItem.h"
 #import "Three20UI/TTTableControlItem.h"
+#import "Three20UI/TTTableCheckmarkItem.h"
 #import "Three20UI/TTTableViewItem.h"
 
 // Table Item Cells
@@ -129,7 +130,7 @@
 #import "Three20UI/TTTableActivityItemCell.h"
 #import "Three20UI/TTTableControlCell.h"
 #import "Three20UI/TTTableFlushViewCell.h"
-
+#import "Three20UI/TTTableCheckmarkItemCell.h"
 #import "Three20UI/TTErrorView.h"
 
 #import "Three20UI/TTPhotoVersion.h"

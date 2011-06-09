@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30787D821367AF5C005F70CC /* TTTableCheckmarkItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 30787D801367AF3E005F70CC /* TTTableCheckmarkItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30787D821367AF5C005F70CC /* TTTableCheckmarkItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 30787D801367AF3E005F70CC /* TTTableCheckmarkItem.h */; };
 		30787D831367AF5C005F70CC /* TTTableCheckmarkItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 30787D811367AF50005F70CC /* TTTableCheckmarkItem.m */; };
-		30DB723C1368DD02006F93B3 /* TTTableCheckmarkItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 30DB723A1368DD00006F93B3 /* TTTableCheckmarkItemCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30DB723C1368DD02006F93B3 /* TTTableCheckmarkItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 30DB723A1368DD00006F93B3 /* TTTableCheckmarkItemCell.h */; };
 		30DB723D1368DD02006F93B3 /* TTTableCheckmarkItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DB723B1368DD01006F93B3 /* TTTableCheckmarkItemCell.m */; };
 		666E18E912945430001C1D97 /* TTSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 666E18E712945430001C1D97 /* TTSplitViewController.m */; };
 		666E18F51294543F001C1D97 /* TTSplitViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 666E18F41294543F001C1D97 /* TTSplitViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -437,10 +437,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		30787D801367AF3E005F70CC /* TTTableCheckmarkItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableCheckmarkItem.h; path = Headers/TTTableCheckmarkItem.h; sourceTree = "<group>"; };
+		30787D801367AF3E005F70CC /* TTTableCheckmarkItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableCheckmarkItem.h; path = ../../../../../Programming/Arch/Three20/src/Three20UI/Headers/TTTableCheckmarkItem.h; sourceTree = "<group>"; };
 		30787D811367AF50005F70CC /* TTTableCheckmarkItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableCheckmarkItem.m; path = Sources/TTTableCheckmarkItem.m; sourceTree = "<group>"; };
-		30DB723A1368DD00006F93B3 /* TTTableCheckmarkItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableCheckmarkItemCell.h; path = Headers/TTTableCheckmarkItemCell.h; sourceTree = "<group>"; };
-		30DB723B1368DD01006F93B3 /* TTTableCheckmarkItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableCheckmarkItemCell.m; path = Sources/TTTableCheckmarkItemCell.m; sourceTree = "<group>"; };
+		30DB723A1368DD00006F93B3 /* TTTableCheckmarkItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableCheckmarkItemCell.h; path = ../../../../../Programming/Arch/Three20/src/Three20UI/Headers/TTTableCheckmarkItemCell.h; sourceTree = "<group>"; };
+		30DB723B1368DD01006F93B3 /* TTTableCheckmarkItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableCheckmarkItemCell.m; path = ../../../../../Programming/Arch/Three20/src/Three20UI/Sources/TTTableCheckmarkItemCell.m; sourceTree = "<group>"; };
 		666E18E712945430001C1D97 /* TTSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTSplitViewController.m; path = Sources/TTSplitViewController.m; sourceTree = "<group>"; };
 		666E18F41294543F001C1D97 /* TTSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTSplitViewController.h; path = Headers/TTSplitViewController.h; sourceTree = "<group>"; };
 		66ADC8C61290AC0200855386 /* TTExtensionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTExtensionsController.m; path = Sources/TTExtensionsController.m; sourceTree = "<group>"; };
