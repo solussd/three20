@@ -32,6 +32,7 @@
     TTTableCheckmarkItem *item = [[self alloc] init];
     item.text = text;
     return [item autorelease];
+
 }
 + (id)itemWithText:(NSString*)text delegate:(id)delegate selector:(SEL)selector {
     TTTableCheckmarkItem *item = [[self alloc] init];
@@ -39,6 +40,7 @@
     item.delegate = delegate;
     item.selector = selector;
     return [item autorelease];
+
 }
 
 
