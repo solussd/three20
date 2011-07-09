@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		30787D821367AF5C005F70CC /* TTTableCheckmarkItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 30787D801367AF3E005F70CC /* TTTableCheckmarkItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30787D831367AF5C005F70CC /* TTTableCheckmarkItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 30787D811367AF50005F70CC /* TTTableCheckmarkItem.m */; };
+		30C915E213C8F59300DB422F /* TTTableViewDelegate+URLAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C915E013C8F59300DB422F /* TTTableViewDelegate+URLAdditions.h */; };
+		30C915E313C8F59300DB422F /* TTTableViewDelegate+URLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C915E113C8F59300DB422F /* TTTableViewDelegate+URLAdditions.m */; };
 		30DB723C1368DD02006F93B3 /* TTTableCheckmarkItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 30DB723A1368DD00006F93B3 /* TTTableCheckmarkItemCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30DB723D1368DD02006F93B3 /* TTTableCheckmarkItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DB723B1368DD01006F93B3 /* TTTableCheckmarkItemCell.m */; };
 		666E18E912945430001C1D97 /* TTSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 666E18E712945430001C1D97 /* TTSplitViewController.m */; };
@@ -439,6 +441,8 @@
 /* Begin PBXFileReference section */
 		30787D801367AF3E005F70CC /* TTTableCheckmarkItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableCheckmarkItem.h; path = Headers/TTTableCheckmarkItem.h; sourceTree = "<group>"; };
 		30787D811367AF50005F70CC /* TTTableCheckmarkItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableCheckmarkItem.m; path = Sources/TTTableCheckmarkItem.m; sourceTree = "<group>"; };
+		30C915E013C8F59300DB422F /* TTTableViewDelegate+URLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TTTableViewDelegate+URLAdditions.h"; path = "Headers/TTTableViewDelegate+URLAdditions.h"; sourceTree = "<group>"; };
+		30C915E113C8F59300DB422F /* TTTableViewDelegate+URLAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TTTableViewDelegate+URLAdditions.m"; path = "Sources/TTTableViewDelegate+URLAdditions.m"; sourceTree = "<group>"; };
 		30DB723A1368DD00006F93B3 /* TTTableCheckmarkItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableCheckmarkItemCell.h; path = Headers/TTTableCheckmarkItemCell.h; sourceTree = "<group>"; };
 		30DB723B1368DD01006F93B3 /* TTTableCheckmarkItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableCheckmarkItemCell.m; path = Sources/TTTableCheckmarkItemCell.m; sourceTree = "<group>"; };
 		666E18E712945430001C1D97 /* TTSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTSplitViewController.m; path = Sources/TTSplitViewController.m; sourceTree = "<group>"; };
@@ -1319,6 +1323,8 @@
 				6E64552B1184D4C500F08CB1 /* TTTableViewDelegate.h */,
 				6E64565B1184D4DA00F08CB1 /* TTTableViewDelegate.m */,
 				6E64582A1184DF7A00F08CB1 /* Table Delegates */,
+				30C915E013C8F59300DB422F /* TTTableViewDelegate+URLAdditions.h */,
+				30C915E113C8F59300DB422F /* TTTableViewDelegate+URLAdditions.m */,
 			);
 			name = "Table Delegate";
 			sourceTree = "<group>";
@@ -1873,6 +1879,7 @@
 				66F2E85F12D426DA006FB485 /* TTTableViewNetworkEnabledDelegate.h in Headers */,
 				30787D821367AF5C005F70CC /* TTTableCheckmarkItem.h in Headers */,
 				30DB723C1368DD02006F93B3 /* TTTableCheckmarkItemCell.h in Headers */,
+				30C915E213C8F59300DB422F /* TTTableViewDelegate+URLAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2235,6 +2242,7 @@
 				66F2E86512D426EF006FB485 /* TTTableViewNetworkEnabledDelegate.m in Sources */,
 				30787D831367AF5C005F70CC /* TTTableCheckmarkItem.m in Sources */,
 				30DB723D1368DD02006F93B3 /* TTTableCheckmarkItemCell.m in Sources */,
+				30C915E313C8F59300DB422F /* TTTableViewDelegate+URLAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
