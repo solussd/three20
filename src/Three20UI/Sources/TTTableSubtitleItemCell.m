@@ -136,6 +136,7 @@
 
     TTTableSubtitleItem* item = object;
     if (item.text.length) {
+        self.textLabel.minimumFontSize = 14;
       self.textLabel.text = item.text;
     }
     if (item.subtitle.length) {
