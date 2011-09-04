@@ -90,7 +90,7 @@ typedef enum {
 	BOOL multi;
 	id<SBJsonStreamParserDelegate> delegate;
 	SBJsonTokeniser *tokeniser;
-	SBJsonStreamParserState **states;
+	__unsafe_unretained SBJsonStreamParserState **states;
 	NSUInteger depth, maxDepth;
 	NSString *error;
 }
@@ -115,7 +115,7 @@ typedef enum {
 @property NSUInteger maxDepth;
 
 /// @internal
-@property (readonly) SBJsonStreamParserState **states;
+@property (readonly) __unsafe_unretained SBJsonStreamParserState **states;
 
 /// Holds the error after SBJsonStreamParserError was returned
 @property (copy) NSString *error;

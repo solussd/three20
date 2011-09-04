@@ -72,7 +72,7 @@
 
 @interface SBJsonStreamWriter : NSObject {
 	NSString *error;
-	SBJsonStreamWriterState **states;
+	__unsafe_unretained SBJsonStreamWriterState **states;
 	NSMutableData *data;
 	NSUInteger depth, maxDepth;
     BOOL sortKeys, humanReadable;
@@ -87,7 +87,7 @@
  */
 @property(readonly) NSMutableData *data;
 
-@property(readonly) NSObject **states;
+@property(readonly) __unsafe_unretained NSObject **states;
 @property(readonly) NSUInteger depth;
 
 /**
