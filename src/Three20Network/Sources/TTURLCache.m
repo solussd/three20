@@ -62,30 +62,32 @@ static NSMutableDictionary* gNamedCaches = nil;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id)initWithName:(NSString*)name {
-  if (self = [super init]) {
-    _name             = [name copy];
-    _cachePath        = [[TTURLCache cachePathWithName:name] retain];
-    _invalidationAge  = TT_DEFAULT_CACHE_INVALIDATION_AGE;
-
-    // XXXjoe Disabling the built-in cache may save memory but it also makes UIWebView slow
-    // NSURLCache* sharedCache = [[NSURLCache alloc] initWithMemoryCapacity:0 diskCapacity:0
-    // diskPath:nil];
-    // [NSURLCache setSharedURLCache:sharedCache];
-    // [sharedCache release];
-
-    [[NSNotificationCenter defaultCenter]
-     addObserver: self
-        selector: @selector(didReceiveMemoryWarning:)
-            name: UIApplicationDidReceiveMemoryWarningNotification
-          object: nil];
-  }
-  return self;
+	self = [super init];
+    if (self) {
+        _name             = [name copy];
+        _cachePath        = [[TTURLCache cachePathWithName:name] retain];
+        _invalidationAge  = TT_DEFAULT_CACHE_INVALIDATION_AGE;
+        
+        // XXXjoe Disabling the built-in cache may save memory but it also makes UIWebView slow
+        // NSURLCache* sharedCache = [[NSURLCache alloc] initWithMemoryCapacity:0 diskCapacity:0
+        // diskPath:nil];
+        // [NSURLCache setSharedURLCache:sharedCache];
+        // [sharedCache release];
+        
+        [[NSNotificationCenter defaultCenter]
+         addObserver: self
+         selector: @selector(didReceiveMemoryWarning:)
+         name: UIApplicationDidReceiveMemoryWarningNotification
+         object: nil];
+    }
+    return self;
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id)init {
-  if (self = [self initWithName:kDefaultCacheName]) {
+	self = [self initWithName:kDefaultCacheName];
+  if (self) {
   }
 
   return self;
@@ -262,8 +264,7 @@ static NSMutableDictionary* gNamedCaches = nil;
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (UIImage*)loadImageFromDocuments:(NSString*)URL {
   NSString* path = TTPathForDocumentsResource([URL substringFromIndex:12]);
-  NSData* data = [NSData dataWithContentsOfFile:path];
-  return [UIImage imageWithData:data];
+  return [UIImage imageWithContentsOfFile:path];
 }
 
 

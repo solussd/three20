@@ -17,6 +17,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+// UI
+#import "Three20UI/TTLauncherPersistenceMode.h"
+
 @protocol TTLauncherViewDelegate;
 @class TTPageControl;
 @class TTLauncherButton;
@@ -49,6 +52,10 @@
 
   BOOL _editing;
   BOOL _springing;
+  BOOL _editable;
+
+  NSString*                   _persistenceKey;
+  TTLauncherPersistenceMode   _persistenceMode;
 
   id<TTLauncherViewDelegate> _delegate;
     
@@ -68,6 +75,21 @@
 @property (nonatomic, copy) NSString* prompt;
 
 @property (nonatomic, readonly) BOOL editing;
+@property (nonatomic, assign) BOOL editable;
+
+/**
+ * The key to use for storing persistence information.
+ *
+ * @default launcherViewPages
+ */
+@property (nonatomic, copy) NSString* persistenceKey;
+
+/**
+ * How buttons are automatically persisted on termination and restored on launch.
+ *
+ * @default TTLauncherPersistenceModeNone
+ */
+@property (nonatomic) TTLauncherPersistenceMode persistenceMode;
 
 @property (nonatomic, retain) UIView *bannerView;
 
@@ -84,6 +106,21 @@
 - (void)beginEditing;
 
 - (void)endEditing;
+
+/**
+ * Persists all pages & buttons to user defaults.
+ */
+- (void)persistLauncherItems;
+
+/**
+ * Restores all pages & button from user defaults and returns if sucess
+ */
+- (BOOL)restoreLauncherItems;
+
+/**
+ * Erases all data stored in user defaults.
+ */
+- (void)resetDefaults;
 
 /**
  * Dims the launcher view except for a transparent circle around the given item. The given text

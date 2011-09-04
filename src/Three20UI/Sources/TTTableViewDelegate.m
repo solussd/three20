@@ -64,7 +64,8 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id)initWithController:(TTTableViewController*)controller {
-  if (self = [super init]) {
+  self = [super init];
+  if (self) {
     _controller = controller;
   }
   return self;
