@@ -239,12 +239,23 @@ const NSTimeInterval TTURLRequestUseDefaultTimeout = -1.0;
   for (NSInteger i = 0; i < _files.count; i += 3) {
     NSData* data = [_files objectAtIndex:i];
     NSString* mimeType = [_files objectAtIndex:i+1];
-    NSString* fileName = [_files objectAtIndex:i+2];
-
+    __block NSString* keyName = nil;
+    NSString* fileName = ^{
+      id fileNameField = [_files objectAtIndex:i+2];
+      if([fileNameField isKindOfClass:[NSArray class]])
+      {
+          keyName = [(NSArray *)fileNameField objectAtIndex:0];
+          return [(NSArray *)fileNameField objectAtIndex:1];
+      }
+      
+      keyName = fileNameField;
+      return fileNameField;
+    }();
+    
     [body appendData:[beginLine dataUsingEncoding:NSUTF8StringEncoding]];
     [body appendData:[[NSString stringWithFormat:
                        @"Content-Disposition: form-data; name=\"%@\"; filename=\"%@\"\r\n",
-                       fileName, fileName]
+                       keyName, fileName]
           dataUsingEncoding:_charsetForMultipart]];
     [body appendData:[[NSString stringWithFormat:@"Content-Length: %d\r\n", data.length]
           dataUsingEncoding:_charsetForMultipart]];
@@ -252,8 +263,10 @@ const NSTimeInterval TTURLRequestUseDefaultTimeout = -1.0;
           dataUsingEncoding:_charsetForMultipart]];
     [body appendData:data];
 		[body appendData:[endLine dataUsingEncoding:NSUTF8StringEncoding]];
-  }
+      
+      NSLog(@"keyName: %@ FileName: %@", keyName, fileName);
 
+  }
   [body appendData:[[NSString stringWithFormat:@"--%@--\r\n", kStringBoundary]
                    dataUsingEncoding:NSUTF8StringEncoding]];
 
@@ -351,7 +364,17 @@ const NSTimeInterval TTURLRequestUseDefaultTimeout = -1.0;
   [_files addObject:fileName];
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
 
+- (void)addFile:(NSData*)data mimeType:(NSString*)mimeType keyName:(NSString *)keyName fileName:(NSString*)fileName {
+    if (!_files) {
+        _files = [[NSMutableArray alloc] init];
+    }
+    
+    [_files addObject:data];
+    [_files addObject:mimeType];
+    [_files addObject:[NSArray arrayWithObjects:keyName, fileName, nil]];
+}
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (BOOL)send {
   if (_parameters) {
