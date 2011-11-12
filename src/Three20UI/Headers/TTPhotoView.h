@@ -29,6 +29,8 @@
   TTLabel* _statusLabel;
   TTLabel* _captionLabel;
   TTStyle* _captionStyle;
+    
+  UIButton* _infoButton;
 
   TTPhotoVersion _photoVersion;
 

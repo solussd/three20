@@ -73,7 +73,7 @@ static const NSInteger kDefaultColumnCount = 3;
 @synthesize editable	= _editable;
 @synthesize persistenceMode           = _persistenceMode;
 @synthesize persistenceKey            = _persistenceKey;
-
+@synthesize scrollView = _scrollView;
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id)initWithFrame:(CGRect)frame {
 	self = [super initWithFrame:frame];

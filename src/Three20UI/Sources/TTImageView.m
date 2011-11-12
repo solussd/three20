@@ -20,8 +20,8 @@
 #import "Three20UI/TTImageViewDelegate.h"
 
 // UI (private)
-#import "Three20UI/private/TTImageLayer.h"
-#import "Three20UI/private/TTImageViewInternal.h"
+#import "Three20UI/TTImageLayer.h"
+#import "Three20UI/TTImageViewInternal.h"
 
 // Style
 #import "Three20Style/TTShape.h"
@@ -297,5 +297,25 @@
   }
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+#pragma mark -
+#pragma mark NSCoding
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (id)initWithCoder:(NSCoder*)decoder {
+	self = [super initWithCoder:decoder];
+    if (self) {
+        
+    }
+    return self;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)encodeWithCoder:(NSCoder*)encoder {
+    [super encodeWithCoder:encoder];
+}
 
 @end

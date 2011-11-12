@@ -22,6 +22,7 @@
 }
 
 @property (nonatomic, copy) NSString* text;
+@property (nonatomic, readonly) BOOL hasDeleteButton;
 
 + (id)itemWithText:(NSString*)text;
 + (id)itemWithText:(NSString*)text URL:(NSString*)URL;

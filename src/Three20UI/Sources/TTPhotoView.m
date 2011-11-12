@@ -113,6 +113,12 @@
       _captionLabel.alpha = _hidesCaption ? 0 : 1;
       [self addSubview:_captionLabel];
     }
+    
+    if (!_infoButton) {
+      _infoButton = [[UIButton buttonWithType:UIButtonTypeInfoLight] retain];
+      [_infoButton addTarget:self action:@selector(infoButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    }
+        
   }
 
   _captionLabel.text = caption;
@@ -225,6 +231,7 @@
     CGRectMake(self.bounds.origin.x + floor(self.bounds.size.width/2 - _statusSpinner.width/2),
                spinnerTop, _statusSpinner.width, _statusSpinner.height);
 
+    //_infoButton.frame = 
 }
 
 

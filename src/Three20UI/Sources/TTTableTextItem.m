@@ -18,6 +18,9 @@
 
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"
+@interface TTTableTextItem ()
+@property (nonatomic, readwrite) BOOL hasDeleteButton;
+@end
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -48,7 +51,6 @@
   item.text = text;
   return item;
 }
-
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 + (id)itemWithText:(NSString*)text URL:(NSString*)URL {

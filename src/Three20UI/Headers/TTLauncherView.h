@@ -77,6 +77,8 @@
 @property (nonatomic, readonly) BOOL editing;
 @property (nonatomic, assign) BOOL editable;
 
+@property (nonatomic, retain, readonly) UIScrollView *scrollView;
+
 /**
  * The key to use for storing persistence information.
  *
