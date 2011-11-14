@@ -124,7 +124,7 @@ static const UILineBreakMode kLineBreakMode = UILineBreakModeWordWrap;
     [super setObject:object];
     TTTableTextItem* item = object;
     self.textLabel.text = item.text;
-	self.textLabel.backgroundColor = TTSTYLEVAR(backgroundTextColor);
+      self.textLabel.backgroundColor = [UIColor clearColor]; //TTSTYLEVAR(backgroundTextColor);
     if ([object isKindOfClass:[TTTableButton class]]) {
       self.textLabel.font = TTSTYLEVAR(tableButtonFont);
       self.textLabel.textColor = TTSTYLEVAR(linkTextColor);
