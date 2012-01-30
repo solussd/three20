@@ -35,7 +35,7 @@
 
 // - Table Item Cells
 #import "Three20UI/TTTableMoreButtonCell.h"
-#import "Three20UI/TTTableCheckmarkItemCell.h"
+//#import "Three20UI/TTTableCheckmarkItemCell.h"
 
 // Style
 #import "Three20Style/TTGlobalStyle.h"
@@ -47,6 +47,11 @@
 // Core
 #import "Three20Core/TTCorePreprocessorMacros.h"
 
+static const CGFloat kEmptyHeaderHeight = 0.0f;
+static const CGFloat kSectionHeaderHeight = 22.0f;
+static const CGFloat kGroupedSectionHeaderHeight = 36.0f;
+static const CGFloat kGroupedSectionFirstHeaderHeight = 36.0f + 10.0f;
+static const NSUInteger kFirstTableSection = 0;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -119,6 +124,27 @@
   return nil;
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section {
+  if ([tableView.dataSource respondsToSelector:@selector(tableView:titleForHeaderInSection:)]) {
+    NSString* title = [tableView.dataSource tableView:tableView titleForHeaderInSection:section];
+    if (![title length]) {
+      return kEmptyHeaderHeight;
+    }
+
+    if (tableView.style == UITableViewStylePlain) {
+      return kSectionHeaderHeight;
+
+    } else {
+      if (section == kFirstTableSection) {
+        return kGroupedSectionFirstHeaderHeight;
+      }
+      return kGroupedSectionHeaderHeight;
+    }
+
+  }
+  return kEmptyHeaderHeight;
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 /**
@@ -156,16 +182,16 @@
       }
     }
   }
-  else if([object isKindOfClass:[TTTableCheckmarkItem class]]) {
-      TTTableCheckmarkItem *item = object;
-      [item setChecked:![item isChecked]];
-      TTTableCheckmarkItemCell *cell = (TTTableCheckmarkItemCell *)[tableView cellForRowAtIndexPath:indexPath]; 
-      [cell layoutSubviews];
-      [tableView deselectRowAtIndexPath:indexPath animated:YES];
-      if(item.delegate && item.selector) {
-          [item.delegate performSelector:item.selector withObject:item];
-      }
-  }
+//  else if([object isKindOfClass:[TTTableCheckmarkItem class]]) {
+//      TTTableCheckmarkItem *item = object;
+//      [item setChecked:![item isChecked]];
+//      TTTableCheckmarkItemCell *cell = (TTTableCheckmarkItemCell *)[tableView cellForRowAtIndexPath:indexPath]; 
+//      [cell layoutSubviews];
+//      [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//      if(item.delegate && item.selector) {
+//          [item.delegate performSelector:item.selector withObject:item];
+//      }
+//  }
 
   [_controller didSelectObject:object atIndexPath:indexPath];
 }

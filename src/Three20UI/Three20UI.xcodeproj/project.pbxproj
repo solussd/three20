@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30787D821367AF5C005F70CC /* TTTableCheckmarkItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 30787D801367AF3E005F70CC /* TTTableCheckmarkItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30787D831367AF5C005F70CC /* TTTableCheckmarkItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 30787D811367AF50005F70CC /* TTTableCheckmarkItem.m */; };
-		30C915E213C8F59300DB422F /* TTTableViewDelegate+URLAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C915E013C8F59300DB422F /* TTTableViewDelegate+URLAdditions.h */; };
-		30C915E313C8F59300DB422F /* TTTableViewDelegate+URLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C915E113C8F59300DB422F /* TTTableViewDelegate+URLAdditions.m */; };
-		30DB723C1368DD02006F93B3 /* TTTableCheckmarkItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 30DB723A1368DD00006F93B3 /* TTTableCheckmarkItemCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30DB723D1368DD02006F93B3 /* TTTableCheckmarkItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DB723B1368DD01006F93B3 /* TTTableCheckmarkItemCell.m */; };
 		666E18E912945430001C1D97 /* TTSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 666E18E712945430001C1D97 /* TTSplitViewController.m */; };
 		666E18F51294543F001C1D97 /* TTSplitViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 666E18F41294543F001C1D97 /* TTSplitViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66ADC8C91290AC0200855386 /* TTExtensionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66ADC8C61290AC0200855386 /* TTExtensionsController.m */; };
@@ -23,7 +17,13 @@
 		66F2E85712D426AF006FB485 /* TTTableFooterInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F2E85512D426AF006FB485 /* TTTableFooterInfiniteScrollView.m */; };
 		66F2E85F12D426DA006FB485 /* TTTableViewNetworkEnabledDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 66F2E85D12D426DA006FB485 /* TTTableViewNetworkEnabledDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66F2E86512D426EF006FB485 /* TTTableViewNetworkEnabledDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F2E86312D426EF006FB485 /* TTTableViewNetworkEnabledDelegate.m */; };
+		6D31FEDB14312683006C6B7F /* TTTableSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D31FEDA14312683006C6B7F /* TTTableSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D31FEDD1431268C006C6B7F /* TTTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D31FEDC1431268C006C6B7F /* TTTableSection.m */; };
 		6DB1E37D13CA885B00A72466 /* TTLauncherPersistenceMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DB1E37C13CA885B00A72466 /* TTLauncherPersistenceMode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DD20D35141D0C1B00916A4A /* TTTableSettingsItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD20D34141D0C1B00916A4A /* TTTableSettingsItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DD20D37141D0C2800916A4A /* TTTableSettingsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD20D36141D0C2800916A4A /* TTTableSettingsItem.m */; };
+		6DD20D39141D0C3A00916A4A /* TTTableSettingsItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD20D38141D0C3A00916A4A /* TTTableSettingsItemCell.m */; };
+		6DD20D3B141D0C4800916A4A /* TTTableSettingsItemCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DD20D3A141D0C4800916A4A /* TTTableSettingsItemCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E60820111B0C31400C93CD4 /* TTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6081FF11B0C31400C93CD4 /* TTNavigationController.m */; };
 		6E60820311B0C32600C93CD4 /* TTNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E60820211B0C32600C93CD4 /* TTNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E6454741184D2CD00F08CB1 /* Three20UI.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E6454731184D2CD00F08CB1 /* Three20UI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -440,12 +440,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		30787D801367AF3E005F70CC /* TTTableCheckmarkItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableCheckmarkItem.h; path = Headers/TTTableCheckmarkItem.h; sourceTree = "<group>"; };
-		30787D811367AF50005F70CC /* TTTableCheckmarkItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableCheckmarkItem.m; path = Sources/TTTableCheckmarkItem.m; sourceTree = "<group>"; };
-		30C915E013C8F59300DB422F /* TTTableViewDelegate+URLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TTTableViewDelegate+URLAdditions.h"; path = "Headers/TTTableViewDelegate+URLAdditions.h"; sourceTree = "<group>"; };
-		30C915E113C8F59300DB422F /* TTTableViewDelegate+URLAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TTTableViewDelegate+URLAdditions.m"; path = "Sources/TTTableViewDelegate+URLAdditions.m"; sourceTree = "<group>"; };
-		30DB723A1368DD00006F93B3 /* TTTableCheckmarkItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableCheckmarkItemCell.h; path = Headers/TTTableCheckmarkItemCell.h; sourceTree = "<group>"; };
-		30DB723B1368DD01006F93B3 /* TTTableCheckmarkItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableCheckmarkItemCell.m; path = Sources/TTTableCheckmarkItemCell.m; sourceTree = "<group>"; };
 		666E18E712945430001C1D97 /* TTSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTSplitViewController.m; path = Sources/TTSplitViewController.m; sourceTree = "<group>"; };
 		666E18F41294543F001C1D97 /* TTSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTSplitViewController.h; path = Headers/TTSplitViewController.h; sourceTree = "<group>"; };
 		66ADC8C61290AC0200855386 /* TTExtensionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTExtensionsController.m; path = Sources/TTExtensionsController.m; sourceTree = "<group>"; };
@@ -456,7 +450,13 @@
 		66F2E85512D426AF006FB485 /* TTTableFooterInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableFooterInfiniteScrollView.m; path = Sources/TTTableFooterInfiniteScrollView.m; sourceTree = "<group>"; };
 		66F2E85D12D426DA006FB485 /* TTTableViewNetworkEnabledDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableViewNetworkEnabledDelegate.h; path = Headers/TTTableViewNetworkEnabledDelegate.h; sourceTree = "<group>"; };
 		66F2E86312D426EF006FB485 /* TTTableViewNetworkEnabledDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableViewNetworkEnabledDelegate.m; path = Sources/TTTableViewNetworkEnabledDelegate.m; sourceTree = "<group>"; };
+		6D31FEDA14312683006C6B7F /* TTTableSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableSection.h; path = Headers/TTTableSection.h; sourceTree = "<group>"; };
+		6D31FEDC1431268C006C6B7F /* TTTableSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableSection.m; path = Sources/TTTableSection.m; sourceTree = "<group>"; };
 		6DB1E37C13CA885B00A72466 /* TTLauncherPersistenceMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTLauncherPersistenceMode.h; path = Headers/TTLauncherPersistenceMode.h; sourceTree = "<group>"; };
+		6DD20D34141D0C1B00916A4A /* TTTableSettingsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableSettingsItem.h; path = Headers/TTTableSettingsItem.h; sourceTree = "<group>"; };
+		6DD20D36141D0C2800916A4A /* TTTableSettingsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableSettingsItem.m; path = Sources/TTTableSettingsItem.m; sourceTree = "<group>"; };
+		6DD20D38141D0C3A00916A4A /* TTTableSettingsItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTableSettingsItemCell.m; path = Sources/TTTableSettingsItemCell.m; sourceTree = "<group>"; };
+		6DD20D3A141D0C4800916A4A /* TTTableSettingsItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTableSettingsItemCell.h; path = Headers/TTTableSettingsItemCell.h; sourceTree = "<group>"; };
 		6E6081FF11B0C31400C93CD4 /* TTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTNavigationController.m; path = Sources/TTNavigationController.m; sourceTree = "<group>"; };
 		6E60820211B0C32600C93CD4 /* TTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTNavigationController.h; path = Headers/TTNavigationController.h; sourceTree = "<group>"; };
 		6E64543D1184BE1B00F08CB1 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Project.xcconfig; path = Configurations/Project.xcconfig; sourceTree = "<group>"; };
@@ -785,6 +785,15 @@
 				66ADCD9B1291AA7100855386 /* TTExtensionInfoController.m */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		6D31FED61431266E006C6B7F /* Table Section */ = {
+			isa = PBXGroup;
+			children = (
+				6D31FEDA14312683006C6B7F /* TTTableSection.h */,
+				6D31FEDC1431268C006C6B7F /* TTTableSection.m */,
+			);
+			name = "Table Section";
 			sourceTree = "<group>";
 		};
 		6E08B274118282F700DA1579 /* Tests */ = {
@@ -1298,6 +1307,7 @@
 		6E6458271184DF1E00F08CB1 /* Tables */ = {
 			isa = PBXGroup;
 			children = (
+				6D31FED61431266E006C6B7F /* Table Section */,
 				6E6458281184DF5F00F08CB1 /* Table Controller */,
 				6E6458291184DF6C00F08CB1 /* Table Delegate */,
 				6E64582C1184DFC500F08CB1 /* Table Data Source */,
@@ -1325,8 +1335,6 @@
 				6E64552B1184D4C500F08CB1 /* TTTableViewDelegate.h */,
 				6E64565B1184D4DA00F08CB1 /* TTTableViewDelegate.m */,
 				6E64582A1184DF7A00F08CB1 /* Table Delegates */,
-				30C915E013C8F59300DB422F /* TTTableViewDelegate+URLAdditions.h */,
-				30C915E113C8F59300DB422F /* TTTableViewDelegate+URLAdditions.m */,
 			);
 			name = "Table Delegate";
 			sourceTree = "<group>";
@@ -1426,6 +1434,8 @@
 		6E6458321184E06F00F08CB1 /* Table Items */ = {
 			isa = PBXGroup;
 			children = (
+				6DD20D34141D0C1B00916A4A /* TTTableSettingsItem.h */,
+				6DD20D36141D0C2800916A4A /* TTTableSettingsItem.m */,
 				6E6455061184D4C500F08CB1 /* TTTableActivityItem.h */,
 				6E6456361184D4DA00F08CB1 /* TTTableActivityItem.m */,
 				6E6455081184D4C500F08CB1 /* TTTableButton.h */,
@@ -1464,8 +1474,6 @@
 				6E6456551184D4DA00F08CB1 /* TTTableTextItem.m */,
 				6E64552E1184D4C500F08CB1 /* TTTableViewItem.h */,
 				6E64565E1184D4DA00F08CB1 /* TTTableViewItem.m */,
-				30787D801367AF3E005F70CC /* TTTableCheckmarkItem.h */,
-				30787D811367AF50005F70CC /* TTTableCheckmarkItem.m */,
 			);
 			name = "Table Items";
 			sourceTree = "<group>";
@@ -1473,6 +1481,8 @@
 		6E6458361184E10200F08CB1 /* Table Cells */ = {
 			isa = PBXGroup;
 			children = (
+				6DD20D3A141D0C4800916A4A /* TTTableSettingsItemCell.h */,
+				6DD20D38141D0C3A00916A4A /* TTTableSettingsItemCell.m */,
 				6E6454FE1184D4C500F08CB1 /* TTStyledTextTableCell.h */,
 				6E64562F1184D4DA00F08CB1 /* TTStyledTextTableCell.m */,
 				6E6454FF1184D4C500F08CB1 /* TTStyledTextTableItemCell.h */,
@@ -1501,8 +1511,6 @@
 				6E6456531184D4DA00F08CB1 /* TTTableSubtitleItemCell.m */,
 				6E6455261184D4C500F08CB1 /* TTTableTextItemCell.h */,
 				6E6456561184D4DA00F08CB1 /* TTTableTextItemCell.m */,
-				30DB723A1368DD00006F93B3 /* TTTableCheckmarkItemCell.h */,
-				30DB723B1368DD01006F93B3 /* TTTableCheckmarkItemCell.m */,
 			);
 			name = "Table Cells";
 			sourceTree = "<group>";
@@ -1880,10 +1888,10 @@
 				666E18F51294543F001C1D97 /* TTSplitViewController.h in Headers */,
 				66F2E85412D426A5006FB485 /* TTTableFooterInfiniteScrollView.h in Headers */,
 				66F2E85F12D426DA006FB485 /* TTTableViewNetworkEnabledDelegate.h in Headers */,
-				30787D821367AF5C005F70CC /* TTTableCheckmarkItem.h in Headers */,
-				30DB723C1368DD02006F93B3 /* TTTableCheckmarkItemCell.h in Headers */,
-				30C915E213C8F59300DB422F /* TTTableViewDelegate+URLAdditions.h in Headers */,
 				6DB1E37D13CA885B00A72466 /* TTLauncherPersistenceMode.h in Headers */,
+				6DD20D35141D0C1B00916A4A /* TTTableSettingsItem.h in Headers */,
+				6DD20D3B141D0C4800916A4A /* TTTableSettingsItemCell.h in Headers */,
+				6D31FEDB14312683006C6B7F /* TTTableSection.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2244,9 +2252,9 @@
 				666E18E912945430001C1D97 /* TTSplitViewController.m in Sources */,
 				66F2E85712D426AF006FB485 /* TTTableFooterInfiniteScrollView.m in Sources */,
 				66F2E86512D426EF006FB485 /* TTTableViewNetworkEnabledDelegate.m in Sources */,
-				30787D831367AF5C005F70CC /* TTTableCheckmarkItem.m in Sources */,
-				30DB723D1368DD02006F93B3 /* TTTableCheckmarkItemCell.m in Sources */,
-				30C915E313C8F59300DB422F /* TTTableViewDelegate+URLAdditions.m in Sources */,
+				6DD20D37141D0C2800916A4A /* TTTableSettingsItem.m in Sources */,
+				6DD20D39141D0C3A00916A4A /* TTTableSettingsItemCell.m in Sources */,
+				6D31FEDD1431268C006C6B7F /* TTTableSection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2329,7 +2337,6 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 			};
 			name = Internal;
 		};
@@ -2343,11 +2350,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				INSTALL_PATH = "";
 				PREBINDING = NO;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 			};
 			name = Internal;
 		};
@@ -2377,10 +2382,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				INSTALL_PATH = "";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -2391,10 +2394,8 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				INSTALL_PATH = "";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -2409,7 +2410,6 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -2423,7 +2423,6 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};

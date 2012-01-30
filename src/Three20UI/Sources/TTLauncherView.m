@@ -43,13 +43,13 @@
 #import "Three20Core/TTDebugFlags.h"
 #import "Three20Core/TTGlobalCoreRects.h"
 
-static const CGFloat kMargin = 0;
-static const CGFloat kMarginTop = 45;
-static const CGFloat kPadding = 0;
-static const CGFloat kPromptMargin = 40;
-static const CGFloat kPagerHeight = 20;
-static const CGFloat kWobbleRadians = 1.5;
-static const CGFloat kSpringLoadFraction = 0.18;
+static const CGFloat kMargin = 0.0f;
+static const CGFloat kMarginTop = 45.0f;
+static const CGFloat kPadding = 0.0f;
+static const CGFloat kPromptMargin = 40.0f;
+static const CGFloat kPagerHeight = 20.0f;
+static const CGFloat kWobbleRadians = 1.5f;
+static const CGFloat kSpringLoadFraction = 0.18f;
 
 static const NSTimeInterval kEditHoldTimeInterval = 1;
 static const NSTimeInterval kSpringLoadTimeInterval = 0.5;
@@ -267,7 +267,7 @@ static const NSInteger kDefaultColumnCount = 3;
   CGFloat buttonHeight = [self rowHeight];
   CGFloat pageWidth = _scrollView.width;
 
-  CGFloat x = kMargin, minX = 0;
+  CGFloat x = kMargin, minX = 0.0f;
   for (NSMutableArray* buttonPage in _buttons) {
     CGFloat y = kMarginTop;
     for (TTLauncherButton* button in buttonPage) {
