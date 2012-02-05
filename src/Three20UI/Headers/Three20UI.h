@@ -115,7 +115,7 @@
 #import "Three20UI/TTTableActivityItem.h"
 #import "Three20UI/TTTableStyledTextItem.h"
 #import "Three20UI/TTTableControlItem.h"
-#import "Three20UI/TTTableCheckmarkItem.h"
+//#import "Three20UI/TTTableCheckmarkItem.h"
 #import "Three20UI/TTTableViewItem.h"
 #import "Three20UI/TTTableSettingsItem.h"
 
@@ -134,7 +134,7 @@
 #import "Three20UI/TTTableActivityItemCell.h"
 #import "Three20UI/TTTableControlCell.h"
 #import "Three20UI/TTTableFlushViewCell.h"
-#import "Three20UI/TTTableCheckmarkItemCell.h"
+//#import "Three20UI/TTTableCheckmarkItemCell.h"
 #import "Three20UI/TTTableSettingsItemCell.h"
 #import "Three20UI/TTErrorView.h"
 

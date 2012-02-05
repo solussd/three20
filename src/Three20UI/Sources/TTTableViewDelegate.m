@@ -28,7 +28,7 @@
 #import "Three20UI/TTTableItem.h"
 #import "Three20UI/TTTableLinkedItem.h"
 
-#import "Three20UI/TTTableCheckmarkItem.h"
+//#import "Three20UI/TTTableCheckmarkItem.h"
 
 #import "Three20UI/TTTableButton.h"
 #import "Three20UI/TTTableMoreButton.h"

@@ -141,7 +141,7 @@
       self.contentMode = UIViewContentModeCenter;
 
     } else {
-      self.contentMode = UIViewContentModeScaleAspectFill;
+      self.contentMode = UIViewContentModeScaleAspectFit;
     }
 
     [super setImage:image];
